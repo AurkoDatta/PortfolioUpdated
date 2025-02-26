@@ -1,0 +1,89 @@
+.footer {
+    background-color: var(--bg-dark-secondary);
+    padding: 3rem 0 1.5rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.footer-info p {
+    color: var(--text-secondary);
+    margin-bottom: 0.3rem;
+}
+
+.footer-contact a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    transition: var(--transition-medium);
+}
+
+.footer-contact a:hover {
+    color: var(--accent-color);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-social a {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    transition: var(--transition-medium);
+}
+
+.footer-social a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.footer-copyright {
+    text-align: center;
+    border-top: 1px solid var(--card-border);
+    padding-top: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.footer-made-with {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.heart-icon {
+    color: #ff6b6b;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+}
